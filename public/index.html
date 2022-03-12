@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/submit" method="get">
+
+        <div>
+            <label for="num1">Number 1</label>
+            <input type="text" name="num1" id="num1" required>
+        </div>
+        <div>
+            <label for="opt">Operator &nbsp;</label>
+            <select name="opt" id="opt" required>
+                <option value="">select...</option>
+                <option value="add">Add</option>
+                <option value="sub">Subtract</option>
+                <option value="time">Multiply</option>
+                <option value="div">Divide</option>
+            </select>
+        </div>
+        <div>
+            <label for="num2">Number 2</label>
+            <input type="text" name="num2" id="num2" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+    
+</body>
+</html>
